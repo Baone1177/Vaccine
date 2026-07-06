@@ -25,6 +25,14 @@
                 <button class="button-nav">
                     Check Status
                 </button>
+                <button class="hamburger-btn">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="1" x2="20" y2="1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="0" y1="6" x2="20" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="0" y1="11" x2="20" y2="11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="0" y1="16" x2="20" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
             </nav>
             <section class="hero">
                 <div class="hero-left">
@@ -101,11 +109,13 @@
     </header>
     <main>
         <section class="section1">
-            <div class="logo-line">
-                <img src="assets/img/Moderna_logo 1.svg" alt="">
-                <img src="assets/img/Pfizer_(2021) 1.svg" alt="">
-                <img src="assets/img/yellow-logo-zeneca-pharmaceutical-industry-brand 1.svg" alt="">
-                <img src="assets/img/sinovac1336 1.svg" alt="">
+            <div class="logo-container">
+                <div class="logo-line">
+                    <img src="assets/img/Moderna_logo 1.svg" alt="">
+                    <img src="assets/img/Pfizer_(2021) 1.svg" alt="">
+                    <img src="assets/img/yellow-logo-zeneca-pharmaceutical-industry-brand 1.svg" alt="">
+                    <img src="assets/img/sinovac1336 1.svg" alt="">
+                </div>
             </div>
             <div class="checker-container-top">
                 <div class="checker-wrap">
@@ -174,7 +184,7 @@
                 </h2>
                 </div>
                 <div class="registration-box">
-                    <div class="regitration-left">
+                    <div class="registration-left">
                         <div class="form-group">
                             <label class="form-label">Patient's Full Name</label>
                             <input type="text" class="form-input" placeholder="Full name">
@@ -221,20 +231,21 @@
             <div class="symptoms-header">
                 <p class="symptoms-label">Covid-19 Prevention</p>
                 <h2 class="symptoms-title">COVID-19 <span class="cyan-text">Symptoms</span></h2>
-                <p class="symptoms-subtitle">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit. <br> Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</p>
+                <p class="symptoms-subtitle">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit.
+                                            Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</p>
             </div>
 
             <div class="symptoms-body">
-                <div class="symptoms-col">
-                    <div class="symptom-badge">
+                <div class="symptoms-col col-left">
+                    <div class="symptom-badge badge-top">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>High Fever</span>
                     </div>
-                    <div class="symptom-badge">
+                    <div class="symptom-badge badge-mid">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>Loss sense of smell</span>
                     </div>
-                    <div class="symptom-badge">
+                    <div class="symptom-badge badge-bottom">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>Dry cough</span>
                     </div>
@@ -244,16 +255,16 @@
                     <img src="assets/img/man1.svg" alt="Man wearing mask">
                 </div>
 
-                <div class="symptoms-col">
-                    <div class="symptom-badge">
+                <div class="symptoms-col col-right">
+                    <div class="symptom-badge badge-top">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>Loss of sense of taste</span>
                     </div>
-                    <div class="symptom-badge">
+                    <div class="symptom-badge badge-mid">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>Difficulty Breathing</span>
                     </div>
-                    <div class="symptom-badge">
+                    <div class="symptom-badge badge-bottom">
                         <img src="assets/img/coronavirus-2996952-2495219.svg" alt="Virus" class="badge-icon">
                         <span>Sore Throat</span>
                     </div>
@@ -261,92 +272,89 @@
             </div>
         </section>
         <section class="feedback-section">
-    <div class="feedback-header">
-        <p class="feedback-label">FEEDBACK</p>
-        <h2 class="feedback-title">What our Patients Think</h2>
-        <p class="feedback-subtitle">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit. Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</p>
-    </div>
+            <div class="feedback-header">
+                <p class="feedback-label">FEEDBACK</p>
+                <h2 class="feedback-title">What our Patients Think</h2>
+                <p class="feedback-subtitle">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit. Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</p>
+            </div>
 
-    <div class="feedback-cards">
-        <div class="feedback-card">
-            <div class="card-user">
-                <img src="assets/img/avatar1.png" alt="Oyindamola Maja" class="user-avatar">
-                <div class="user-info">
-                    <h3>Oyindamola Maja</h3>
-                    <p>Badagry, Lagos</p>
+            <div class="feedback-cards">
+                <div class="feedback-card">
+                    <div class="card-user">
+                        <img src="assets/img/Rectangle 25.svg" alt="Oyindamola Maja" class="user-avatar">
+                        <div class="user-info">
+                            <h3>Oyindamola Maja</h3>
+                            <p>Badagry, Lagos</p>
+                        </div>
+                    </div>
+                    <p class="card-text">“Been stressing about a close centre to get the <span class="highlight">covid-19</span> vaccine, until i tried Vaccination.ng”</p>
+                </div>
+
+                <div class="feedback-card card-active">
+                    <div class="card-user">
+                        <img src="assets/img/Rectangle 24.svg" alt="Okeowo Lekan" class="user-avatar">
+                        <div class="user-info">
+                            <h3>Okeowo Lekan</h3>
+                            <p>Ikeja, Lagos</p>
+                        </div>
+                    </div>
+                    <p class="card-text">“Got my vaccine very close to my house. Was very easy scheduling an appointment.”</p>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="card-user">
+                        <img src="assets/img/Rectangle 26.svg" alt="Kafaru Temitope" class="user-avatar">
+                        <div class="user-info">
+                            <h3>Kafaru Temitope</h3>
+                            <p>Obanikoro, Lagos</p>
+                        </div>
+                    </div>
+                    <p class="card-text">“Been stressing about a close centre to get the <span class="highlight">covid-19</span> vaccine, until i tried Vaccination.ng”</p>
                 </div>
             </div>
-            <p class="card-text">“Been stressing about a close centre to get the <span class="highlight">covid-19</span> vaccine, until i tried Vaccination.ng”</p>
-        </div>
 
-        <div class="feedback-card card-active">
-            <div class="card-user">
-                <img src="assets/img/avatar2.png" alt="Okeowo Lekan" class="user-avatar">
-                <div class="user-info">
-                    <h3>Okeowo Lekan</h3>
-                    <p>Ikeja, Lagos</p>
+            <div class="quote-wrapper">
+                <div class="quote-container">
+                    <h2 class="quote-title">Get a quote</h2>
+                    <p class="quote-subtitle">Please do enter your email address below</p>
+                    <form class="quote-form">
+                        <input type="email" placeholder="lenux.ng@gmail.com" required class="quote-input">
+                        <button type="submit" class="quote-submit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <p class="card-text">“Got my vaccine very close to my house. Was very easy scheduling an appointment.”</p>
-        </div>
-
-        <div class="feedback-card">
-            <div class="card-user">
-                <img src="assets/img/avatar3.png" alt="Kafaru Temitope" class="user-avatar">
-                <div class="user-info">
-                    <h3>Kafaru Temitope</h3>
-                    <p>Obanikoro, Lagos</p>
-                </div>
-            </div>
-            <p class="card-text">“Been stressing about a close centre to get the <span class="highlight">covid-19</span> vaccine, until i tried Vaccination.ng”</p>
-        </div>
-    </div>
-
-    <div class="quote-wrapper">
-        <div class="quote-container">
-            <h2 class="quote-title">Get a quote</h2>
-            <p class="quote-subtitle">Please do enter your email address below</p>
-            <form class="quote-form">
-                <input type="email" placeholder="lenux.ng@gmail.com" required class="quote-input">
-                <button type="submit" class="quote-submit-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </div>
-    <footer class="footer-section">
-        <div class="footer-container">
-            <a href="#" class="footer-logo">Vaccination<span>.ng</span></a>
-
-            <nav class="footer-nav">
-                <a href="#" class="nav-link active">Home</a>
-                <a href="#" class="nav-link">Services</a>
-                <a href="#" class="nav-link">Schedule</a>
-                <a href="#" class="nav-link">Contact us</a>
-            </nav>
-
-            <div class="footer-socials">
-                <a href="#" class="social-icon">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-                </a>
-                <a href="#" class="social-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </a>
-                <a href="#" class="social-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                </a>
-                <a href="#" class="social-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-</section>
+        </section>
     </main>
-    <footer>
+    <footer class="footer-section">
+                <div class="footer-content">
+                    <a href="#" class="footer-logo">Vaccination<span>.ng</span></a>
 
+                    <nav class="footer-nav">
+                        <p class="nav-link active">Home</p>
+                        <p class="nav-link">Services</p>
+                        <p class="nav-link">Schedule</p>
+                        <p class="nav-link">Contact us</p>
+                    </nav>
+
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon">
+                            <img src="assets/img/youtube.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                           <img src="assets/img/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="assets/img/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="assets/img/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
     </footer>
 </body>
 </html>

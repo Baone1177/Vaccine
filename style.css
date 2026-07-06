@@ -15,7 +15,6 @@ header {
 
 .header-container {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 50px 70px 0px;
 }
@@ -90,11 +89,11 @@ nav{
 .hero{
     display: flex;
     justify-content: center;
-    gap: 124px;
+    gap: 290px;
 }
 .hero-left{
     position: relative;
-    margin-left: -87px;
+    
 }
 .hero-subtitle{
     font-weight: 700;
@@ -429,11 +428,13 @@ img[alt="Shield"] {
 .title-cyan {
     color: #00d2ff;
 }
-
+.card-desc.desc-light{
+    height: 85px;
+}
 .card-desc {
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 100%;
     margin-bottom: 40px;
     margin-top: 20px;
 }
@@ -628,7 +629,7 @@ img[alt="Shield"] {
 .registration-box{
     position: relative;
     display: flex;
-    gap: 300px;
+    gap: 162px;
 }
 .box img:nth-child(1) {
     position: relative;
@@ -668,22 +669,44 @@ img[alt="Shield"] {
 .symptoms-section {
     position: relative;
     width: 100%;
-    background-color: #0B153C;
+    background: url("assets/img/background.svg") no-repeat center / cover, #0B153C;
     padding: 80px 70px;
     overflow: hidden;
 }
+.symptoms-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 480px;
+    flex: 1;
+}
 
-.symptoms-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 3px;
-    width: 1440px;
-    height: 981px;
-    background: url("assets/img/symptoms-bg-shape.svg") no-repeat center / cover;
-    opacity: 0.2;
-    pointer-events: none;
-    z-index: 0;
+.col-left {
+    align-items: flex-end;
+}
+
+.col-right {
+    align-items: flex-start;
+}
+.col-left .badge-bottom {
+    margin-right: 177px; 
+}
+.col-right .badge-bottom {
+    margin-left: 157px;
+}
+
+.col-left .badge-mid {
+    margin-right: 30px;
+}
+.col-right .badge-mid {
+    margin-left: 77px;
+}
+
+.col-left .badge-top {
+    margin-right: 20px;
+}
+.col-right .badge-top {
+    margin-left: 20px;
 }
 
 .symptoms-header,
@@ -693,7 +716,7 @@ img[alt="Shield"] {
 }
 
 .symptoms-header {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto 60px;
     text-align: center;
 }
@@ -723,6 +746,8 @@ img[alt="Shield"] {
 }
 
 .symptoms-subtitle {
+    width: 958px;
+    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -784,16 +809,17 @@ img[alt="Shield"] {
 }
 .feedback-section {
     width: 100%;
+    height: 934px;
     background-color: #FFFFFF;
-    padding: 100px 70px 0 70px;
+    padding: 57px 70px 0 70px;
     position: relative;
-    box-sizing: border-box;
-    background: url('assets/img/vaccine-bg.png') no-repeat center / cover;
+    background: url('assets/img/vaccine-bg.png') no-repeat center;
+    background-position: center;
 }
 
 .feedback-header {
     max-width: 800px;
-    margin: 0 auto 60px;
+    margin: 0 auto 100px;
     text-align: center;
 }
 
@@ -804,7 +830,7 @@ img[alt="Shield"] {
     line-height: 100%;
     letter-spacing: 0%;
     color: #17C2EC;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .feedback-title {
@@ -814,7 +840,7 @@ img[alt="Shield"] {
     line-height: 100%;
     letter-spacing: 0%;
     color: #0B153C;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .feedback-subtitle {
@@ -830,7 +856,7 @@ img[alt="Shield"] {
     display: flex;
     justify-content: center;
     gap: 45px; 
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .feedback-card {
@@ -861,7 +887,7 @@ img[alt="Shield"] {
 .user-avatar {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
 }
 
@@ -952,9 +978,8 @@ img[alt="Shield"] {
     align-items: center;
     width: 680px; 
     background: #FFFFFF;
-    border-radius: 20px;
-    padding: 8px 8px 8px 24px;
-    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0 0 0 24px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -973,51 +998,28 @@ img[alt="Shield"] {
 }
 
 .quote-submit-btn {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 75px;
     background: #0B153C;
     border: none;
-    border-radius: 16px;
+    border-radius: 0 30px 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer-section {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     height: 500px;
-    background-color: #0B153C;
-    position: relative;
-    
-    /* Căn giữa block 100vw khi nằm trong vùng container bị giới hạn */
-    left: 50%;
-    transform: translateX(-50%);
-    
+    background: url("assets/img/background.svg") no-repeat center / cover, #0B153C;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
     padding: 230px 70px 0 70px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.footer-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0; 
-    height: 500px;
-    width: 100%; 
-    background: url("assets/img/background.svg") no-repeat center;
-    background-size: cover;
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-.footer-container {
-    position: relative;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .footer-logo {
@@ -1036,20 +1038,25 @@ img[alt="Shield"] {
 .footer-nav {
     display: flex;
     gap: 40px;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: #FFFFFF;
     font-weight: 500;
+    opacity: 50%;
 }
-
+.nav-link.active{
+    opacity: 100%;
+}
 .footer-socials {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
 }
 
 .social-icon {
@@ -1058,4 +1065,660 @@ img[alt="Shield"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.hamburger-btn {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C41A;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .menu-nav,
+    .button-nav {
+        display: none;
+    }
+    .hamburger-btn {
+        display: flex;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 55px;
+    }
+    .header-container{
+        padding: 50px 50px 0px;
+    }
+    nav{
+        margin-bottom: 31px;
+    }
+    .hero-right img{
+        position: relative;
+        left: 60px;
+    }
+    .schedule-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 37px 11px 45px;
+    }
+
+    .schedule-left {
+        display: contents; 
+    }
+    .logo-line{
+        margin: 25px 50px 0px;
+        height: 80px;
+        gap: 15px;
+    }
+    .logo-line img{
+        height: 60px;
+        width: 130px;
+    }
+    .checker-form{
+        flex-direction: column;
+    }
+    .checker-title{
+        position: relative;
+        top: 5px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .checker-wrap {
+        background: linear-gradient(
+            to bottom, 
+            rgba(255, 255, 255, 0.07) 0%, 
+            rgba(255, 255, 255, 0.07) 20%,  
+            rgba(255, 255, 255, 0.03) 20%, 
+            rgba(255, 255, 255, 0.03) 100%
+        );
+        padding: 24px 20px;
+        margin: 0px 50px;
+        width: calc(100% - 100px);
+    }
+    .checker-btn{
+        width: 170px;
+    }
+    .vaccine-section {
+        height: auto; 
+        padding: 60px 50px;
+        gap: 40px;
+    }
+
+    .vaccine-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .vaccine-title {
+        width: 400px;   
+        height: auto;
+        font-size: 36px;
+    }
+
+    .vaccine-subtitle {
+        width: 470px;
+        height: auto;
+        font-size: 20px;
+    }
+    .vaccine-subtitle br {
+        display: none; 
+    }
+
+    .vaccine-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .card-featured {
+        grid-column: 1 / -1; 
+    }
+
+    .vaccine-card {
+        padding: 24px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title br{
+        display: none;
+    }
+    .card-desc.desc-light{
+        margin-top: 30px;
+    }
+    .card-desc {
+        font-size: 18px;
+        width: 350px;
+    }
+    .card-standard{
+        width: 296px;
+        height: 290px;
+    }
+    .card-title.title-cyan{
+        width: 300px;
+    }
+    .card-icon-wrap.icon-blue{
+        margin-bottom: 40px;
+    }
+    .symptoms-section{
+        width: 100%;
+        height: 650px;
+    }
+    .symptoms-body{
+        position: relative;
+        bottom: 150px;
+    }
+    .symptoms-image img{
+        width: 458px;
+        height: 343px;
+    }
+    .symptom-badge {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: 45px;
+        padding-left: 50px;
+        padding-right: 30px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+    }
+
+    .badge-icon {
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }   
+    .symptoms-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }   
+
+    .symptoms-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 230px;
+    }
+    .symptoms-col.col-left{
+        position: relative;
+        left: 220px;
+        top: 90px;
+    }
+    .symptoms-col.col-right{
+        position: relative;
+        right: 250px;
+        top: 90px;
+    }
+    .symptom-badge span {
+        font-weight: 600;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .col-left .badge-top {
+        order: 1;
+    }
+    .col-left .badge-mid {
+        order: 3;
+        z-index: 2;
+    }
+    .col-left .badge-bottom {
+        order: 1;
+        left: 100px;
+        width: 180px;
+    }
+
+    .col-right .badge-top {
+        order: 1;
+    }
+    .col-right .badge-mid {
+        order: 2;
+        width: 260px;
+        padding-right: 0px;
+    }
+    .col-right .badge-bottom {
+        order: 3;
+    }
+    .symptoms-subtitle{
+        max-width: 500px;
+        font-size: 18px;
+    }
+    .feedback-section{
+        height: 1250px;
+        padding: 40px 50px;
+    }
+    .feedback-cards{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .feedback-title{
+        font-size: 36px;
+    }
+    .feedback-subtitle{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .feedback-header{
+        margin-bottom: 60px;
+    }
+    .registration-box{
+        flex-direction: column;
+    }
+    .registration-section{
+        height: 1376px;
+    }
+    .registration-title{
+        font-size: 36px;
+        margin-left: 50px ;
+    }
+    .registration-right{
+        order: 1;
+        position: relative;
+        top: 150px;
+        right: 20px;
+    }
+    .registration-left{
+        order: 2;
+        margin: 0 50px;
+    }
+    .registration-container{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .quote-container {
+        width: 593px;
+        height: 263px;
+    }
+    .quote-wrapper{
+        bottom: 40px;
+    }
+    .quote-form {
+        width: 549px; 
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 0 0 0 24px;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    }
+    .quote-title{
+        font-size: 36px;
+    }
+    .quote-subtitle{
+        font-size: 20px;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer-logo{
+        font-size: 25.5px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .footer-socials img{
+        width: 31.5px;
+        height: 31.5px;
+    }
+    .social-icon{
+        margin-left: -10px;
+    }
+}
+@media (max-width: 375px) {
+    .header-container{
+        padding: 50px 35px 0px;
+    }
+    .logo{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .hero-subtitle{
+        font-size: 12px;
+        font-weight: 700px;
+    }
+    .hero-title{
+        font-size: 24px;
+    }
+    .hero-description{
+        font-size: 14px;
+    }
+    .hero-description br{
+        display: none;
+    }
+    .hero-buttons{
+        height: 50px;
+    }
+    .btn-primary,
+    .btn-outline{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    .hero-right img{
+        width: 256px;
+        height: 274.7px;
+        position: relative;
+        left: 15px;
+        margin-bottom: 80px;
+    }
+    .schedule-title{
+        font-size: 14px;
+    }
+    .schedule-form{
+        grid-template-columns: 1fr;
+    }
+    .schedule-item{
+        font-size: 14px;
+    }
+    .schedule-info .label,
+    .schedule-info .value{
+        font-size: 14px;
+    }
+    .btn-primary{
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-line img{
+        width: 72.48px;
+        height: 16.67px;
+    }
+    .logo-container{
+        height: 39.06px;
+    }
+    .logo-line{
+        margin: 20px 24.41px 0px;
+        height: 80px;
+        gap: 12px;
+    }
+    .checker-wrap{
+        background: linear-gradient(
+            to bottom, 
+            rgba(255, 255, 255, 0.07) 0%, 
+            rgba(255, 255, 255, 0.07) 15%,  
+            rgba(255, 255, 255, 0.03) 15%, 
+            rgba(255, 255, 255, 0.03) 100%
+        );
+        margin: 0 35px;
+        width: calc(100% - 70px);
+    }
+    .checker-title{
+        font-size: 10px;
+    }
+    .checker-input.active{
+        font-size: 12px;
+    }
+    .checker-input{
+        font-size: 12px;
+    }
+    .checker-footer{
+        font-size: 10px;
+    }
+    .vaccine-section{
+        padding: 42px 35px;
+    }
+    .vaccine-title{
+        font-size: 24px;
+        max-width: 265px;
+    }
+    .vaccine-subtitle{
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .card-featured{
+        width: 276px;
+        height: 280px;
+    }
+    .card-icon-wrap.icon-blue {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .card-icon-wrap.icon-blue img[alt="Shield"] {
+        width: 30px;
+        height: 30px;
+    }
+    .card-title.title-cyan{
+        font-size: 14px;
+        margin: 20px 0 0;
+        width: 170px;
+    }
+    .card-desc.desc-light{
+        font-size: 12px;
+        margin: 20px 0 25px;
+        width: 250px;
+    }
+    .card-link{
+        font-size: 12px;
+        margin: 0;
+    }
+    .card-link.link-cyan{
+        position: relative;
+        top: -35px;
+        margin: 0;
+    }
+    .vaccine-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .vaccine-card.card-standard{
+        width: 188px;
+        height: 202px;
+    }
+    .card-title{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .card-icon-wrap {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+    }
+
+    .card-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .registration-title{
+        margin-left: 70px;
+        font-size: 24px;
+        height: 80px;
+    }
+    .registration-right {
+        transform: scale(0.6);
+        transform-origin: top left;
+        left: 10px;
+    }
+    .registration-left{
+        margin: -300px 35px 0px 35px;
+        height: 600px;
+        position: relative;
+        bottom: -200px;
+    }
+    .phone-verify-row{
+        flex-direction: column;
+    }
+    .form-label,
+    .form-note{
+        font-size: 14px;
+    }
+    .phone-input{
+        font-size: 14px;
+    }
+    .form-input{
+        height: 40px;
+    }
+    .btn-verify{
+        height: 50px;
+        width: 150px;
+    }
+    .already-registered{
+        font-size: 14px;
+        margin:  20px 0px;
+    }
+    .symptoms-section{
+        width: 100%;
+        height: 346px;
+        padding: 25px 57px;
+    }
+    .symptoms-label{
+        font-size: 12px;
+    }
+    .symptoms-title{
+        font-size: 24px;
+    }
+    .symptoms-subtitle{
+        font-size: 12px;
+        max-width: 300px;
+        position: relative;
+        right: 40px;
+    }
+    .symptoms-image{
+        width: 222px;
+        height: 167px;
+    }
+    .symptoms-body{
+        position: relative;
+    }
+    .symptom-badge {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: 22px;
+        padding-left: 50px;
+        padding-right: 30px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+    }
+
+    .badge-icon {
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 31.06px;
+        height: 31.06px;
+        border-radius: 50%;
+    }
+    .symptoms-body {
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .symptoms-col {
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .symptoms-col.col-left,
+    .symptoms-col.col-right {
+        position: static;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        gap: 10px;
+        order: initial;
+    }
+
+    .symptoms-col.col-left {
+        order: 1;
+        position: relative;
+        top: -20px;
+    }
+
+    .symptoms-image {
+        order: 2;
+    }
+
+    .symptoms-col.col-right {
+        order: 3;
+    }
+
+    .col-left .badge-top,
+    .col-left .badge-mid,
+    .col-left .badge-bottom,
+    .col-right .badge-top,
+    .col-right .badge-mid,
+    .col-right .badge-bottom {
+        order: initial;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .symptom-badge {
+        width: 100%;
+        max-width: 320px;
+        height: 22px;
+        padding: 8px 16px 8px 45px;
+        margin: 0 auto;
+    }
+
+    .symptom-badge span {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .badge-icon {
+        width: 32px;
+        height: 32px;
+        left: -10px;
+    }
+
+    .symptoms-image img {
+        display: none;
+    }
+    .feedback-section{
+        padding: 20px 35px;
+    }
+    .feedback-card{
+        width: 305px;
+        height: 190px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .quote-container{
+        position: relative;
+        transform: scale(0.5);
+        top: -10px;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .footer-content{
+        padding: 100px 35px;
+    }
+    .footer-logo{
+        margin-bottom: 40px;
+    }
 }
